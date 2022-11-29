@@ -83,7 +83,7 @@ data:
         - target: torchvision.transforms.Resize
           params:
             size: 1080
-            interpolation: 3
+            interpolation: 4
         - target: torchvision.transforms.RandomCrop
           params:
             size: 1080
