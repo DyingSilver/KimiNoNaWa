@@ -51,8 +51,8 @@ model:
           double_z: true
           z_channels: 4
           resolution: 256
-          in_channels: 4
-          out_ch: 4
+          in_channels: 3
+          out_ch: 3
           ch: 128
           ch_mult:
           - 1
@@ -72,7 +72,7 @@ model:
 data:
   target: main.DataModuleFromConfig
   params:
-    batch_size: 4
+    batch_size: 1
     num_workers: 4
     num_val_workers: 0 # Avoid a weird val dataloader issue
     train:
